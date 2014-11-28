@@ -5,11 +5,9 @@
 .carousel .slide {
   height: 100%;
 }
-.carousel-caption {
-  margin-top: 0px;
-}
 
 .carousel .item {
+  margin-top: 0px;
   height: 1000px;
   background: #fefcea; /* Old browsers */
   background: -moz-linear-gradient(top,  #fefcea 0%, #f1da36 100%); /* FF3.6+ */
@@ -21,14 +19,17 @@
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefcea', endColorstr='#f1da36',GradientType=0 ); /* IE6-9 */
 }
 .carousel-inner img {
-  padding: 5px;
   height: 700px;
+  border-style: ridge solid;
+  border-color: #752201;
+  border-width: thick;
 }
 
 .carousel-inner p {
   color: #752201;
-  padding: 5px;
-  font-weight: 110%;
+  padding: 10px;
+  font-size: 110%;
+  font-weight: bold;
 }
 
 .carousel-inner h1 {
