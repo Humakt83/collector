@@ -7,48 +7,19 @@
 	<meta charset="UTF-8">
 </head>
 
-<body>
-	<div id="collectorSlides" class="carousel slide" data-ride="carousel" data-interval="false">
+<body ng-app="collector">
+	<div id="collectorSlides" class="carousel slide" data-ride="carousel" data-interval="false" ng-controller="GameCollectionCtrl">
 		<ol class="carousel-indicators">
-			<li data-target="#collectorSlides" data-slide-to="0" class="active"></li>
-			<li data-target="#collectorSlides" data-slide-to="1"></li>
-			<li data-target="#collectorSlides" data-slide-to="2"></li>
+			<li ng-repeat="collection in collectionObjects track by $index" data-target="#collectorSlides" data-slide-to="{{$index}}" ng-class="{active: $index == 0}"></li>
 		</ol>
 		<div class="carousel-inner" role="listbox">
-			<div class="item active">
+			<div class="item" ng-repeat="collection in collectionObjects" ng-class="{active: $index == 0}">
 				<div class="container">
 					<div class="carousel-caption">
-						<h1>Sid Meyer's Civilization</h1>
-						<img src="res/pics/civilization.jpg" alt="Civilization series">
+						<h1>{{collection.title}}</h1>
+						<img src="{{collection.image}}" alt="Civilization series">
 						<p>
-							Civilization series has been one of my all-time favourites since Civilization 2 which I got into late 90's. Generally the series progression has been good and even though initial release of Civilization 5
-							was a disappointment, couple good expansions later it has easily become my favourite game in series and one that I consider possibly the best video game of all time. I've spent more than 900+ hours playing
-							Civilization 5 which, at the moment, is over four times more played game than my next most played game in Steam library.
-						</p>
-					</div>					
-				</div>
-		  	</div>
-			
-			<div class="item">
-				<div class="container">
-					<div class="carousel-caption">					
-						<h1>Mass Effect</h1>
-						<img src="res/pics/masseffect.jpg" alt="Mass Effect trilogy">
-						<p>
-							My favourite scifi trilogy of choice (take that Star Wars!).
-						</p>
-					</div>					
-				</div>
-		  	</div>
-			
-			<div class="item">
-				<div class="container">
-					<div class="carousel-caption">
-						<h1>Dragon Age</h1>
-						<img src="res/pics/dragonage.jpg" alt="Dragon Age">
-						<p>
-							There is just something magical in many Bioware titles that make you spend hundreds of hours playing them. Even Dragon Age 2's disappointing aspects and lack of polish did not stop me spending 
-							more hours than healthy exploring the world, getting invested in the story, honing your tactics and having fun moments with interesting companions. Like getting Aveline romanced to her inferior with Isabella mocking along as they go.
+							{{collection.body}}
 						</p>
 					</div>					
 				</div>
@@ -64,7 +35,10 @@
 		</a>
 	</div>
 	
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="vendor/bootstrap-3.3.1-dist/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="vendor/angular/angular.min.js"></script>
+	<script type="text/javascript" src="vendor/ui-utils-0.1.1/ui-utils.js"></script>
+	<script type="text/javascript" src="collector.js"></script>
 </body>
 </html>
