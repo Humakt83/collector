@@ -48,3 +48,16 @@ body {
 .carousel-indicators .active{
   background-color: #8c3310;
 }
+
+.carousel-caption img {
+  cursor: pointer;
+}
+
+.modal-lg {
+	width: 1150px;
+}
+
+.modal-dialog {
+	margin-top: 20px;
+	margin-left: 20px;
+}

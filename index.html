@@ -9,6 +9,11 @@
 
 <body ng-app="collector">
 	<div id="collectorSlides" class="carousel slide" data-ride="carousel" data-interval="false" ng-controller="GameCollectionCtrl">
+	
+		<script type="text/ng-template" id="bigPicture.html">
+			<img src="{{image}}" title="Click to close" ng-click="cancel()" class="modalimage"/>
+      	</script>
+		
 		<ol class="carousel-indicators">
 			<li ng-repeat="collection in collectionObjects track by $index" data-target="#collectorSlides" data-slide-to="{{$index}}" ng-class="{active: $index == 0}"></li>
 		</ol>
@@ -17,7 +22,7 @@
 				<div class="container">
 					<div class="carousel-caption">
 						<h1>{{collection.title}}</h1>
-						<img src="{{collection.image}}" alt="Civilization series">
+						<img src="{{collection.image}}" title="Click me" ng-click="openModal(collection.image)" />
 						<p ng-bind-html="trustAsHtml(collection.body)">
 						</p>
 					</div>					
@@ -39,6 +44,7 @@
 	<script type="text/javascript" src="vendor/angular/angular.min.js"></script>
 	<script type="text/javascript" src="vendor/angular/angular-sanitize.min.js"></script>
 	<script type="text/javascript" src="vendor/ui-utils-0.1.1/ui-utils.js"></script>
+	<script type="text/javascript" src="vendor/ui-bootstrap-tpls-0.11.2.min.js"></script>
 	<script type="text/javascript" src="collector.js"></script>
 	<script type="text/javascript" src="services/collection.js"></script>
 </body>

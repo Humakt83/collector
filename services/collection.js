@@ -1,3 +1,5 @@
+'use strict'
+
 angular.module('collector').factory('Collections', function() {
 	
 	var imagePath = 'res/pics/'
