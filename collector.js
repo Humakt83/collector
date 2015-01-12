@@ -17,3 +17,13 @@ angular.module('collector').config([ '$routeProvider', function($routeProvider) 
         redirectTo : '/pictures'
     });
 }]);
+
+angular.module('collector').controller('MainController', ['$scope', '$location', function($scope, $location) {
+	$scope.isActive = function (viewLocation) { 
+        return $location.path().indexOf(viewLocation) > -1;
+    };
+	
+	$scope.go = function(url) {
+		$location.path(url)
+	};
+}]);
