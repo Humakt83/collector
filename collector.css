@@ -7,6 +7,7 @@ body {
   background: -ms-linear-gradient(top,  #fefcea 0%,#f1da36 100%); /* IE10+ */
   background: linear-gradient(to bottom,  #fefcea 0%,#f1da36 100%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefcea', endColorstr='#f1da36',GradientType=0 ); /* IE6-9 */
+  height: 100%;
 }
 
 
@@ -51,6 +52,24 @@ body {
 
 .carousel-caption img {
   cursor: pointer;
+}
+
+.carousel-control {
+  cursor: pointer;
+}
+
+.carousel-control.right {
+	background-image: -webkit-linear-gradient(left,rgba(0,0,0,.0001) 0,rgba(140,51,16,.5) 100%);
+	background-image: -o-linear-gradient(left,rgba(0,0,0,.0001) 0,rgba(140,51,16,.5) 100%);
+	background-image: -webkit-gradient(linear,left top,right top,from(rgba(0,0,0,.0001)),to(rgba(140,51,16,.5)));
+	background-image: linear-gradient(to right,rgba(0,0,0,.0001) 0,rgba(140,51,16,.5) 100%);
+}
+
+.carousel-control.left {
+	background-image: -webkit-linear-gradient(right,rgba(0,0,0,.0001) 0,rgba(140,51,16,.5) 100%);
+	background-image: -o-linear-gradient(right,rgba(0,0,0,.0001) 0,rgba(140,51,16,.5) 100%);
+	background-image: -webkit-gradient(linear,right top,left top,from(rgba(0,0,0,.0001)),to(rgba(140,51,16,.5)));
+	background-image: linear-gradient(to left,rgba(0,0,0,.0001) 0,rgba(140,51,16,.5) 100%);
 }
 
 .modal-lg {
