@@ -1,27 +1,51 @@
 body {
   background: #fefcea; /* Old browsers */
-  background: -moz-linear-gradient(top,  #fefcea 0%, #f1da36 100%); /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fefcea), color-stop(100%,#f1da36)); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top,  #fefcea 0%,#f1da36 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top,  #fefcea 0%,#f1da36 100%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(top,  #fefcea 0%,#f1da36 100%); /* IE10+ */
-  background: linear-gradient(to bottom,  #fefcea 0%,#f1da36 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefcea', endColorstr='#f1da36',GradientType=0 ); /* IE6-9 */
+  background: -moz-linear-gradient(top, #f1da36 0%, white 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f1da36), color-stop(100%,white)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #f1da36 0%,white 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #f1da36 0%,white 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #f1da36 0%,white 100%); /* IE10+ */
+  background: linear-gradient(to bottom, #f1da36 0%,white 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1da36', endColorstr='white',GradientType=0 ); /* IE6-9 */
   height: 100%;
+  background-repeat-y: no-repeat;
 }
 
+.site-header {
+  background-color: #8c3310;
+}
+
+.site-header .active {
+  background-color: #752201;
+}
+
+.site-header a,
+.site-header a:hover,
+.site-header a:visited,
+.site-header a:visited:hover {
+  color: white;
+  background: transparent;
+  text-decoration:none;
+  font-size: large;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.navbar-nav ul li:focus,
+.navbar-nav ul li:hover {
+  background-color: #752201 !important;
+}
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 
-/* Carousel base class */
-.carousel .slide {
-  height: 100%;
-}
-
 .carousel .item {
   margin-top: 0px;
-  height: 1000px;
+  height: 850px;
+}
+
+.carousel .video{
+  height: 600px !important;
 }
 
 .carousel-inner img {
@@ -50,6 +74,10 @@ body {
   background-color: #8c3310;
 }
 
+.carousel-caption {
+  position: inherit;
+}
+
 .carousel-caption img {
   cursor: pointer;
 }
@@ -59,17 +87,17 @@ body {
 }
 
 .carousel-control.right {
-	background-image: -webkit-linear-gradient(left,rgba(0,0,0,.0001) 0,rgba(140,51,16,.5) 100%);
-	background-image: -o-linear-gradient(left,rgba(0,0,0,.0001) 0,rgba(140,51,16,.5) 100%);
-	background-image: -webkit-gradient(linear,left top,right top,from(rgba(0,0,0,.0001)),to(rgba(140,51,16,.5)));
-	background-image: linear-gradient(to right,rgba(0,0,0,.0001) 0,rgba(140,51,16,.5) 100%);
+	background-image: -webkit-linear-gradient(left,rgba(0,0,0,.0) 0,rgba(140,51,16,.5) 100%);
+	background-image: -o-linear-gradient(left,rgba(0,0,0,.0) 0,rgba(140,51,16,.5) 100%);
+	background-image: -webkit-gradient(linear,left top,right top,from(rgba(0,0,0,.0)),to(rgba(140,51,16,.5)));
+	background-image: linear-gradient(to right,rgba(0,0,0,.0) 0,rgba(140,51,16,.5) 100%);
 }
 
 .carousel-control.left {
-	background-image: -webkit-linear-gradient(right,rgba(0,0,0,.0001) 0,rgba(140,51,16,.5) 100%);
-	background-image: -o-linear-gradient(right,rgba(0,0,0,.0001) 0,rgba(140,51,16,.5) 100%);
+	background-image: -webkit-linear-gradient(right,rgba(0,0,0,.0) 0,rgba(140,51,16,.5) 100%);
+	background-image: -o-linear-gradient(right,rgba(0,0,0,.0) 0,rgba(140,51,16,.5) 100%);
 	background-image: -webkit-gradient(linear,right top,left top,from(rgba(0,0,0,.0001)),to(rgba(140,51,16,.5)));
-	background-image: linear-gradient(to left,rgba(0,0,0,.0001) 0,rgba(140,51,16,.5) 100%);
+	background-image: linear-gradient(to left,rgba(0,0,0,.0) 0,rgba(140,51,16,.5) 100%);
 }
 
 .modal-lg {
