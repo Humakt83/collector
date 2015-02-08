@@ -29,6 +29,22 @@ angular.module('collector').factory('Collections', function() {
 			title: 'Might & Magic',
 			image: imagePath + 'homm.jpg',
 			body: "Heroes of Might & Magic games have been my longtime favourites, especially its third and fourth incarnation. I've made plenty of maps for these games as well, which you can check <a href='http://www.celestialheavens.com/thundermaps/'>here.</a>"
+		}, {
+			title: 'Bioshock',
+			image: imagePath + 'bioshock.jpg',
+			body: 'Bioshock series have always been very atmospheric first-person shooters with horror elements, fascinating story and interesting characters. Lamented Bioshock 2 is actually my favourite of the series due to improved gameplay, neutral ending of that particular title was very emotianal and memorable. Not that the other games in the series lacked great endings.'
+		}, {
+			title: 'The Elder Scrolls',
+			image: imagePath + 'tes.jpg',
+			body: 'Acclaimed sandbox rpg-series, with fascinating and well-built worlds but often lackluster stories. I believe you can guess from the picture which game of the series was my favourite.'
+		}, {
+			title: 'Crysis',
+			image: imagePath + 'crysis.jpg',
+			body: 'Crysis series usually have pushed the limits of what you can do with graphics one way or another and they are actually solid first-person shooters as well with powers provided by nanosuit. The backpack in the picture contains my gaming laptop.'
+		}, {
+			title: 'Blizzard',
+			image: imagePath + 'blizzard.jpg',
+			body: 'Mix of Blizzard`s games I`ve collected over the years. I am not particularly fond of any series by Blizzard but they do make quality collector edition`s and polish their games often religiously.'
 		}
 	]
 	
