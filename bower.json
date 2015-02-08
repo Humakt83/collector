@@ -1,0 +1,17 @@
+{
+  "name": "Collector",
+  "version": "0.0.5",
+  "description": "bowering and gulping the collector site",
+  "authors": [
+    "Humakt83"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
