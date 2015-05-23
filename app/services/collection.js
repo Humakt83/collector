@@ -14,6 +14,10 @@ angular.module('collector').factory('Collections', function() {
 			image: imagePath + 'masseffect.jpg',
 			body: "My favourite scifi trilogy of choice with epic scenes, choices and consequences, good voice acting and trilogy-spanning plot of control versus freedom."
 		},{
+			title: 'Witcher',
+			image: imagePath + 'witcher.jpg',
+			body: "Fantastic atmospheric games with rich lore, fascinating setting, great characters, and good branching storylines. This series seems to be getting better and better with each new incarnation."
+		},{
 			title: 'Dragon Age',
 			image: imagePath + 'dragonage.jpg',
 			body: "There is just something magical in many Bioware titles that make you spend hundreds of hours playing them. Even Dragon Age 2's disappointing aspects and lack of polish did not stop me spending more hours than healthy exploring the world, getting invested in the story, honing your tactics and having fun moments with interesting companions. Like getting Aveline romanced to her inferior with Isabella mocking along as they go."
