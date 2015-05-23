@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Collector</title>
+	<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
+	<link rel="stylesheet" type="text/css" href="collector.css"/>
+	<meta charset="UTF-8">
+</head>
+
+<body ng-app="collector">
+	<div class="collapse navbar-collapse site-header" ng-controller="MainController">
+        <ul class="nav navbar-nav">
+			<li ng-class="{ active: isActive('pictures')}"><a ng-click="go('pictures')">Pictures</a></li>
+			<li ng-class="{ active: isActive('videos')}"><a ng-click="go('videos')">Videos</a></li>
+		 </ul>
+    </div>
+	
+	<div ng-view>
+	</div>
+	
+	<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+	<script type="text/javascript" src="bower_components/angular-route/angular-route.min.js"></script>
+	<script type="text/javascript" src="bower_components/angular-sanitize/angular-sanitize.min.js"></script>
+	<script type="text/javascript" src="bower_components/ui-utils/ui-utils.min.js"></script>
+	<script type="text/javascript" src="vendor/ui-bootstrap-tpls-0.11.2.min.js"></script>
+	<script type="text/javascript" src="collector.js"></script>
+	<script type="text/javascript" src="services/collection.js"></script>
+	<script type="text/javascript" src="controllers/pictures.js"></script>
+	<script type="text/javascript" src="controllers/videos.js"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<div id="videoSlides" class="carousel slide" data-ride="carousel" data-interval="false" ng-controller="VideosController">
+	
+	<ol class="carousel-indicators">
+		<li ng-repeat="video in videos track by $index" data-target="#videoSlides" data-slide-to="{{$index}}" ng-class="{active: $index == 0}"></li>
+	</ol>
+	
+	<div class="carousel-inner" role="listbox">
+		<div class="item video" ng-repeat="video in videos" ng-class="{active: $index == 0}">
+			<div class="container">
+				<div class="carousel-caption">
+					<iframe width="854" height="510" src="{{getYoutube(video)}}" frameborder="0" allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<a class="left carousel-control video" href="#videoSlides" role="button" data-slide="prev">
+		<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+		<span class="sr-only">Previous</span>
+	</a>
+	<a class="right carousel-control video" href="#videoSlides" role="button" data-slide="next">
+		<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+		<span class="sr-only">Next</span>
+	</a>
+</div>

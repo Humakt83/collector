@@ -1,0 +1,25 @@
+{
+  "name": "Collector",
+  "version": "0.0.5",
+  "description": "bowering and gulping the collector site",
+  "authors": [
+    "Humakt83"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.3.12",
+    "angular-route": "~1.3.12",
+    "angular-sanitize": "~1.3.12",
+    "ui-utils": "~0.2.1",
+    "bootstrap": "~3.3.2",
+    "jquery": "~2.1.3"
+  }
+}
