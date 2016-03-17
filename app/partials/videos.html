@@ -1,4 +1,4 @@
-<div id="videoSlides" class="carousel slide" data-ride="carousel" data-interval="false" ng-controller="VideosController">
+<div id="videoSlides" class="carousel slide" data-ride="carousel" data-interval="false">
 	
 	<ol class="carousel-indicators">
 		<li ng-repeat="video in videos track by $index" data-target="#videoSlides" data-slide-to="{{$index}}" ng-class="{active: $index == 0}"></li>
