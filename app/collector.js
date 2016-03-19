@@ -12,6 +12,10 @@ angular.module('collector').config([ '$routeProvider', function($routeProvider) 
         controller : 'VideosController',
         templateUrl : 'partials/videos.html'
     })
+    .when('/listings', {
+        controller : 'ListingsController',
+        templateUrl : 'partials/listings.html'
+    })
     .otherwise({
 		controller : 'PicturesController',
         redirectTo : '/pictures'

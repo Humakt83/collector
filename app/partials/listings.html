@@ -1,0 +1,23 @@
+<div id="gameListings" class="container">
+    <div class="row">
+        <table class="table table-bordered table-striped table-condensed table-responsive col-xs-10">
+            <thead>
+                <tr>
+                    <th colspan="3"><h3>Special Editions</h3></th>
+                </tr>
+                <tr>
+                    <th>Title</th>
+                    <th>Picture</th>
+                    <th>Video</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="special in specials">
+                    <td>{{special.title}}</td>
+                    <td>{{special.picture ? 'Yes' : 'No'}}</td>
+                    <td>{{special.video ? 'Yes': 'No'}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

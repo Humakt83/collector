@@ -39,7 +39,7 @@ gulp.task('copy-html-files', function () {
 });
 
 gulp.task('copy-pictures', function() {
-  gulp.src('app/res/pics/*')
+  gulp.src('app/res/**/*')
     .pipe(gulp.dest('dist/res/pics'));
 });
 
