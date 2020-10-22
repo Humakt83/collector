@@ -1,18 +1,21 @@
-<div id="collectorSlides" class="carousel slide" data-ride="carousel" data-interval="false">
+<div id="collectorSlides" class="carousel slide" data-ride="carousel" data-interval="false" slidechange>
 	
 	<script type="text/ng-template" id="bigPicture.html">
 		<img src="{{image}}" title="Click to close" ng-click="cancel()" class="modalimage"/>
 	</script>
 	
 	<ol class="carousel-indicators">
-		<li ng-repeat="collection in collectionObjects track by $index" data-target="#collectorSlides" data-slide-to="{{$index}}" ng-class="{active: $index == 0}"></li>
+		<li ng-repeat="collection in collectionObjects track by $index" data-target="#collectorSlides" data-slide-to="{{$index}}" ng-class="{active: $index == 0}" ng-init="activeIndex = 0"></li>
 	</ol>
 	<div class="carousel-inner" role="listbox">
 		<div class="item" ng-repeat="collection in collectionObjects" ng-class="{active: $index == 0}">
 			<div class="container">
 				<div class="carousel-caption">
 					<h1>{{collection.title}}</h1>
-					<img src="{{collection.image}}" title="Click me" ng-click="openModal(collection.image)" />
+					<img src="{{collection.images[activeIndex]}}" title="Click me" ng-click="openModal(collection.images[activeIndex])" class="image__main">
+					<div class="thumbnails">
+						<img ng-repeat="img in collection.images track by $index" src="{{img}}" class="image__small" ng-click="changeIndex($index)">
+					</div>
 					<p ng-bind-html="trustAsHtml(collection.body)">
 					</p>
 				</div>					
