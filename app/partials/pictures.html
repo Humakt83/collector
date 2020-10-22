@@ -12,7 +12,7 @@
 			<div class="container">
 				<div class="carousel-caption">
 					<h1>{{collection.title}}</h1>
-					<img src="{{collection.images[activeIndex]}}" title="Click me" ng-click="openModal(collection.images[activeIndex])" class="image__main">
+					<img src="{{collection.images[activeIndex]}}" title="Click me" ng-click="openModal(collection.images[activeIndex])" class="image__main fade--in">
 					<div class="thumbnails">
 						<img ng-repeat="img in collection.images track by $index" src="{{img}}" class="image__small" ng-click="changeIndex($index)">
 					</div>

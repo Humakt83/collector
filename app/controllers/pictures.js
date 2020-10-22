@@ -21,8 +21,21 @@ angular.module('collector').controller('PicturesController', ['$scope', '$sce', 
 		})
 	}
 
+	$scope.removePictureChangeTimer = function() {
+		clearTimeout($scope.pictureChangeTimeOut);
+	}
+
 	$scope.changeIndex = function(index) {
-		$scope.activeIndex = index;
+		$scope.removePictureChangeTimer();
+		var el = angular.element('.active .image__main');
+		el.removeClass('fade--in');
+		el.addClass('fade--out');
+		$scope.pictureChangeTimeOut = setTimeout(function() {
+			$scope.activeIndex = index;
+			el.removeClass('fade--out');
+			el.addClass('fade--in');
+			$scope.$apply();
+		}, 500);
 	};
 }]);
 
@@ -37,6 +50,7 @@ angular.module('collector').controller('BigPictureCtrl', ['$scope', '$modalInsta
 angular.module('collector').directive('slidechange', function() {
 	return function(scope, element) {
 		element.on('slide.bs.carousel', function() {
+			scope.removePictureChangeTimer();
 			scope.changeIndex(0);
 			scope.$apply();
 		});
