@@ -191,6 +191,18 @@ body {
 }
 
 .modal-dialog {
-	margin-top: 20px;
-	margin-left: 20px;
+	margin: 2rem auto;
+	width: auto;
+}
+
+.modal-content {
+	background-color: transparent;
+	box-shadow: none;
+	border: none;
+	text-align: center;
+}
+
+.modal__image {
+	max-width: 100vw;
+	max-height: 80vh;
 }
