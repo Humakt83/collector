@@ -102,7 +102,6 @@
 }
 
 body {
-  background: #fefcea; /* Old browsers */
   background: -moz-linear-gradient(top, #f1da36 0%, white 100%); /* FF3.6+ */
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f1da36), color-stop(100%,white)); /* Chrome,Safari4+ */
   background: -webkit-linear-gradient(top, #f1da36 0%,white 100%); /* Chrome10+,Safari5.1+ */
@@ -110,8 +109,9 @@ body {
   background: -ms-linear-gradient(top, #f1da36 0%,white 100%); /* IE10+ */
   background: linear-gradient(to bottom, #f1da36 0%,white 100%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1da36', endColorstr='white',GradientType=0 ); /* IE6-9 */
-  height: 100%;
-  background-repeat-y: no-repeat;
+	background-color: white;
+	background-repeat: no-repeat;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
 .site-header {
@@ -129,7 +129,7 @@ body {
   color: white;
   background: transparent;
   text-decoration:none;
-  font-size: large;
+  font-size: x-large;
   font-weight: 700;
   cursor: pointer;
 }
@@ -145,8 +145,8 @@ body {
 .carousel-inner p {
   color: #752201;
   padding: 10px;
-  font-size: 110%;
-  font-weight: bold;
+  font-size: larger;
+  font-weight: bolder;
 }
 
 .carousel-inner h1 {
@@ -180,18 +180,14 @@ body {
   cursor: pointer;
 }
 
+.carousel-control.left,
 .carousel-control.right {
-	background-image: -webkit-linear-gradient(left,rgba(0,0,0,.0) 0,rgba(140,51,16,.5) 100%);
-	background-image: -o-linear-gradient(left,rgba(0,0,0,.0) 0,rgba(140,51,16,.5) 100%);
-	background-image: -webkit-gradient(linear,left top,right top,from(rgba(0,0,0,.0)),to(rgba(140,51,16,.5)));
-	background-image: linear-gradient(to right,rgba(0,0,0,.0) 0,rgba(140,51,16,.5) 100%);
+	background-image: none;
 }
 
-.carousel-control.left {
-	background-image: -webkit-linear-gradient(right,rgba(0,0,0,.0) 0,rgba(140,51,16,.5) 100%);
-	background-image: -o-linear-gradient(right,rgba(0,0,0,.0) 0,rgba(140,51,16,.5) 100%);
-	background-image: -webkit-gradient(linear,right top,left top,from(rgba(0,0,0,.0001)),to(rgba(140,51,16,.5)));
-	background-image: linear-gradient(to left,rgba(0,0,0,.0) 0,rgba(140,51,16,.5) 100%);
+.carousel-control.left:hover,
+.carousel-control.right:hover {
+	background: rgba(0,0,0,0.05);
 }
 
 .modal-dialog {
