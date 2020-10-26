@@ -10,6 +10,10 @@ angular.module('collector').factory('Collections', function() {
 	
 	var collections = [
 		{
+			title: 'Heroes of Might & Magic',
+			images: mapToFullImagePaths(['homm1.jpg', 'homm2.jpg', 'homm3.jpg', 'homm4.jpg', 'homm5.jpg', 'homm6.png', 'homm7.jpg']),
+			body: "Heroes of Might & Magic games have been my longtime favourites, especially its third and fourth incarnation. I've made plenty of maps for these games as well, which you can check <a href='http://www.celestialheavens.com/thundermaps/'>here.</a>"
+		}, {
 			title: 'Sid Meier`s Civilization',
 			images: mapToFullImagePaths(['civ1.png', 'civ2.jpg', 'civ3.jpg', 'civ4.jpg', 'civ5.jpg', 'civ6.jpg']),
 			body: "Civilization series has been one of my all-time favourites since Civilization 2 which I got into late 90`s. Generally the series progression has been good and even though initial release of Civilization 5 was a disappointment, couple good expansions later it has easily become my favourite game in series and one that I consider possibly the best video game of all time. Lately Civilization 6 has been improving but AI still has some difficulties to pose a proper challenge while the gameplay and design is a lot of fun."

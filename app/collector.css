@@ -97,6 +97,12 @@
 	transition: filter 500ms ease-in-out;
 }
 
+.thumbnails .active {
+	filter: none;
+	transition: none;
+	cursor: default;
+}
+
 .thumbnails .image__small:hover {
 	filter: none;
 }

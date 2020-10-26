@@ -26,6 +26,9 @@ angular.module('collector').controller('PicturesController', ['$scope', '$sce', 
 	}
 
 	$scope.changeIndex = function(index) {
+		if ($scope.activeIndex === index) {
+			return;
+		}
 		$scope.removePictureChangeTimer();
 		var el = angular.element('.active .image__main');
 		el.removeClass('fade--in');
