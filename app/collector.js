@@ -3,7 +3,10 @@
 angular.module('collector', ['ngRoute', 'ngSanitize', 'ui.utils', 'ui.bootstrap']);
 
 angular.module('collector').config([ '$routeProvider', function($routeProvider) {
-	$routeProvider
+    $routeProvider
+    .when('/home', {
+        templateUrl: 'partials/home.html'
+    })
 	.when('/pictures', {
 		controller : 'PicturesController',
 		templateUrl : 'partials/pictures.html'
@@ -17,8 +20,7 @@ angular.module('collector').config([ '$routeProvider', function($routeProvider) 
         templateUrl : 'partials/listings.html'
     })
     .otherwise({
-		controller : 'PicturesController',
-        redirectTo : '/pictures'
+        redirectTo : '/home'
     });
 }]);
 

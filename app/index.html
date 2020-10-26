@@ -9,12 +9,14 @@
 
 <body ng-app="collector">
 	<div class="collapse navbar-collapse site-header" ng-controller="MainController">
-        <ul class="nav navbar-nav">
+    <ul class="nav navbar-nav">
+			<li ng-class="{ active: isActive('home')}"><a ng-click="go('home')">Home</a></li>
 			<li ng-class="{ active: isActive('pictures')}"><a ng-click="go('pictures')">Pictures</a></li>
 			<li ng-class="{ active: isActive('videos')}"><a ng-click="go('videos')">Videos</a></li>
-            <li ng-class="{ active: isActive('listings')}"><a ng-click="go('listings')">Listings</a></li>
-		 </ul>
-    </div>
+			<li ng-class="{ active: isActive('listings')}"><a ng-click="go('listings')">Listings</a></li>
+		</ul>
+		<a class="nav navbar-right portal__link" href="https://ukkosnetti.fi">ukkosnetti.fi</a>
+  </div>
 	
 	<div ng-view>
 	</div>
