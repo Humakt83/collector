@@ -167,11 +167,17 @@ body {
 }
 
 .carousel-indicators li {
+	width: 2rem;
+	height: 2rem;
 	border: 2px solid #752201;
+	margin-right: 3px;
 }
 
 .carousel-indicators .active{
-  background-color: #8c3310;
+	background-color: #8c3310;
+	width: 2rem;
+	height: 2rem;
+	margin-right: 3px;
 }
 
 .carousel-caption {
@@ -189,6 +195,16 @@ body {
 .carousel-control.left,
 .carousel-control.right {
 	background-image: none;
+}
+
+.carousel-control .glyphicon::before {
+	background-color: #8c3310;
+	padding: 3px 6px;
+	border-radius: 90%;
+}
+
+.carousel-control .glyphicon {
+	
 }
 
 .carousel-control.left:hover,
