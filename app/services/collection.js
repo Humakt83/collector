@@ -83,7 +83,7 @@ angular.module('collector').factory('Collections', function() {
 			body: 'Horror and gore in the space.'
 		}, {
 			title: 'Deus Ex',
-			images: mapToFullImagePaths(['deus1.jpg', 'deus2.jpg']),
+			images: mapToFullImagePaths(['deus4.jpg', 'deus1.jpg', 'deus2.jpg', 'deus3.jpg', 'deus5.jpg']),
 			body: 'Great scifi-rpg series which allows for sneaky pacifist playthroughs.'
 		}, {
 			title: 'Dishonored',
@@ -113,6 +113,14 @@ angular.module('collector').factory('Collections', function() {
 			title: 'Wolfenstein',
 			images: mapToFullImagePaths(['wolf1.jpg', 'wolf2.jpg']),
 			body: 'Wolfenstein the New Order is my favourite Wolfenstein game but I liked Return to Castle Wolfenstein a lot too.'
+		}, {
+			title: 'Magic the Gathering',
+			images: mapToFullImagePaths(['mtg1.jpg', 'mtg2.jpg']),
+			body: 'I started playing Magic the Gathering back in 1997 and still play it today with emphasis on Commander, Limited and Cube formats. I really liked Microprose`s PC version of the game and its world of Shandalar but I have never played its expansion. I also have complete From the Vault collection.'
+		}, {
+			title: 'Betrayal at Krondor, Jade Empire and Arcanum of Steamworks and Magick Obscura',
+			images: mapToFullImagePaths(['various.jpg', 'arcanum.jpg', 'jade.jpg', 'bak.jpg']),
+			body: 'Betrayal at Krondor and Arcanum are some of my all-time favourite RPG games that I still think fondly even nowadays. Jade Empire is also good and the setting is interesting though its clunky combat and shoddy camera are annoying.'
 		}
 	]
 	
