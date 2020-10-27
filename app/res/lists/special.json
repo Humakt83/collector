@@ -1,113 +1,124 @@
 [
     {
         "title": "Sid Meier's Civilization V",
-        "picture": true,
+        "picture": "civ",
         "video": true
+    },
+    {
+        "title": "Sid Meier's Civilization VI",
+        "picture": "civ",
+        "video": false
     }, {
         "title": "Mass Effect 2",
-        "picture": true,
+        "picture": "mass",
         "video": true
     }, {
         "title": "Mass Effect 3",
-        "picture": true,
+        "picture": "mass",
         "video": true
     }, {
         "title": "The Witcher: Enhanced Edition",
-        "picture": true,
+        "picture": "witcher",
         "video": true
     }, {
         "title": "The Witcher 2: Assassin of Kings",
-        "picture": true,
+        "picture": "witcher",
         "video": true
     }, {
         "title": "The Witcher III: Wild Hunt",
-        "picture": true,
-        "video": true
+        "picture": "witcher",
+        "video": false
     }, {
         "title": "Dragon Age: Origins",
-        "picture": true,
+        "picture": "da",
         "video": true
     }, {
         "title": "Dragon Age 2",
-        "picture": true,
+        "picture": "da",
         "video": true
     }, {
         "title": "Dragon Age: Inquisition",
-        "picture": true,
+        "picture": "da",
         "video": true
     }, {
         "title": "Assassin's Creed Brotherhood: Codex Edition",
-        "picture": true,
+        "picture": "ass",
         "video": true
     }, {
         "title": "Assassin's Creed Revelations",
-        "picture": true,
+        "picture": "ass",
         "video": true
     }, {
         "title": "Assassin's Creed III",
-        "picture": true,
+        "picture": "ass",
         "video": true
     }, {
         "title": "Assassin's Creed IV: Black Flag",
-        "picture": true,
+        "picture": "ass",
         "video": true
     }, {
         "title": "Assassin's Creed V: Unity",
-        "picture": true,
+        "picture": "ass",
         "video": true
     }, {
+        "title": "Assassin's Creed Origins",
+        "picture": "ass",
+        "video": false
+    }, {
         "title": "Baldur's Gate II: Shadows of Amn",
-        "picture": true,
+        "picture": "infinity",
         "video": true
     }, {
         "title": "Heroes of Might and Magic: Complete Edition",
-        "picture": true,
+        "picture": "homm",
         "video": true
     }, {
         "title": "Might and Magic: Heroes VI",
-        "picture": true,
+        "picture": "homm",
         "video": true
     }, {
-        "title": "Might and Magic: Heroes VII"
+        "title": "Might and Magic: Heroes VII",
+        "picture": "homm",
+        "video": false
     }, {
         "title": "Bioshock 2",
-        "picture": true,
+        "picture": "bio",
         "video": true
     }, {
         "title": "Bioshock Infinite: Songbird Edition",
-        "picture": true,
+        "picture": "bio",
         "video": true
     }, {
         "title": "The Elder Scrolls V: Skyrim",
-        "picture": true,
+        "picture": "tes",
         "video": true
     }, {
         "title": "Crysis 2",
-        "picture": true,
+        "picture": "crysis",
         "video": true
     }, {
         "title": "World of Warcraft: Battle Chest",
-        "picture": true,
+        "picture": "blizzard",
         "video": true
     }, {
         "title": "Diablo III",
-        "picture": true,
+        "picture": "blizzard",
         "video": true
     }, {
         "title": "Diablo III: Reaper of Souls",
-        "picture": true,
+        "picture": "blizzard",
         "video": true
     }, {
         "title": "Starcraft II: Wings of Liberty",
-        "picture": true,
+        "picture": "blizzard",
         "video": true
     }, {
         "title": "Starcraft II: Heart of the Swarm",
-        "picture": true,
+        "picture": "blizzard",
         "video": true
     }, {
         "title": "Starcraft II: Legacy of the Void",
-        "picture": true,
+        "picture": "blizzard",
         "video": true
-    }        
+    }
 ]
