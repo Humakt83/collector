@@ -65,7 +65,7 @@
         "picture": "ass",
         "video": false
     }, {
-        "title": "Baldur's Gate II: Shadows of Amn",
+        "title": "Baldur's Gate II: Shadows of Amn: Collector's Edition",
         "picture": "infinity",
         "video": true
     }, {
@@ -120,5 +120,55 @@
         "title": "Starcraft II: Legacy of the Void",
         "picture": "blizzard",
         "video": true
+    }, {
+        "title": "Spore: galactic edition",
+        "video": true
+    }, {
+        "title": "Tom Clancy's Splinter Cell Blacklist: Ultimatum Edition",
+        "video": true
+    }, {
+        "title": "Doom",
+        "picture": "doom",
+        "video": false
+    }, {
+        "title": "Divinity Original Sin 2",
+        "picture": "divinity",
+        "video": false
+    }, {
+        "title": "Borderlands 2",
+        "picture": "borderlands",
+        "video": false
+    }, {
+        "title": "Dark Souls 2",
+        "picture": "souls",
+        "video": false
+    }, {
+        "title": "Dead Space 2",
+        "picture": "dead space",
+        "video": true
+    }, {
+        "title": "Deus Ex: Mankind Divided",
+        "picture": "deus",
+        "video": false
+    }, {
+        "title": "Deus Ex: Human Revolution",
+        "picture": "deus",
+        "video": true
+    }, {
+        "title": "Dishonored 2",
+        "picture": "dishonored",
+        "video": true
+    }, {
+        "title": "Duke Nukem Forever: Balls of Steel Edition",
+        "picture": "duke",
+        "video": true
+    }, {
+        "title": "Fallout New Vegas",
+        "picture": "fallout",
+        "video": true
+    }, {
+        "title": "Fallout 4: Pip-Boy Edition",
+        "picture": "fallout",
+        "video": false
     }
 ]

@@ -13,8 +13,8 @@
             </thead>
             <tbody>
                 <tr ng-repeat="special in specials">
-                    <td>{{special.title}}</td>
-                    <td ng-if="special.picture" ng-click="goToPicture(special.picture)">Yes</td>
+                    <td ng-click="goToPicture(special.picture)" ng-class="{touchable: special.picture}">{{special.title}}</td>
+                    <td ng-if="special.picture" ng-click="goToPicture(special.picture)" class="touchable">Yes</td>
                     <td ng-if="!special.picture">No</td>
                     <td>{{special.video ? 'Yes': 'No'}}</td>
                 </tr>

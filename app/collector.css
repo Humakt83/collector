@@ -259,3 +259,7 @@ h1 {
 	text-align: justify;
 	font-weight: bolder;
 }
+
+.touchable {
+	cursor: pointer;
+}
