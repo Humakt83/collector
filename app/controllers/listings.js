@@ -13,7 +13,7 @@ angular.module('collector').controller('ListingsController', ['$scope', '$http',
         if (!query) {
             return;
         }
-        $location.path('pictures').search({query});
+        $location.path('pictures').search({query: query});
     }
     
 }]);

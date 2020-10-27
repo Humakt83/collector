@@ -4,6 +4,7 @@ var gulp = require('gulp');
 var uglify = require('gulp-uglify');
 var minifyCSS = require('gulp-minify-css');
 var clean = require('gulp-clean');
+var gutil = require('gulp-util');
 
 var browserSync = require('browser-sync');
 var reload = browserSync.reload;
@@ -24,7 +25,7 @@ gulp.task('minify-css', function() {
 
 gulp.task('minify-js', function() {
   gulp.src(['app/collector.js','app/**/*.js', '!app/bower_components/**'])
-    .pipe(uglify({}))
+    .pipe(uglify({}).on('error', gutil.log))
     .pipe(gulp.dest('dist/'))
 });
 
@@ -38,13 +39,18 @@ gulp.task('copy-html-files', function () {
     .pipe(gulp.dest('dist/'));
 });
 
-gulp.task('copy-pictures', function() {
+gulp.task('copy-res', function() {
   gulp.src('app/res/**/*')
-    .pipe(gulp.dest('dist/res/pics'));
+    .pipe(gulp.dest('dist/res/'));
+});
+
+gulp.task('copy-icon', function() {
+  gulp.src('app/favicon.ico')
+    .pipe(gulp.dest('dist/'));
 });
 
 gulp.task('build',
-  ['minify-css', 'minify-js', 'copy-html-files', 'copy-bower-components', 'copy-pictures']
+  ['minify-css', 'minify-js', 'copy-html-files', 'copy-bower-components', 'copy-res', 'copy-icon']
 );
 
 gulp.task('build-start', ['build', 'serveDist']);
