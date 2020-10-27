@@ -7,6 +7,20 @@ angular.module('collector').controller('PicturesController', ['$scope', '$sce', 
 	$scope.trustAsHtml = $sce.trustAsHtml;
 
 	$scope.activeIndex = 0;
+
+	$scope.activeCollection = 0;
+
+	if (document.location.href.indexOf('?query=') > 0) {
+		var query = document.location.href.split('?query=')[1];
+		$scope.collectionObjects.find(function (collection, index) {
+			if (collection.query === query) {
+				$scope.activeCollection = index;
+				return true;
+			}
+		});
+	} else {
+		document.location.href = document.location.href + '?query=' + $scope.collectionObjects[0].query;
+	}
 	
 	$scope.openModal = function(image) {
 		$modal.open({
@@ -19,6 +33,19 @@ angular.module('collector').controller('PicturesController', ['$scope', '$sce', 
 				}
 			}
 		})
+	}
+
+	$scope.changeCollectionQuery = function(direction) {
+		$scope.activeCollection += direction === 'right' ? -1 : 1;
+		if ($scope.activeCollection >= $scope.collectionObjects.length) {
+			$scope.activeCollection = 0;
+		} else if ($scope.activeCollection < 0) {
+			$scope.activeCollection = $scope.collectionObjects.length - 1;
+		}
+		var collection = $scope.collectionObjects[$scope.activeCollection];
+		var location = document.location.href;
+		location = location.indexOf('?')  > 0 ? location.split('?')[0]: location;
+		document.location.href = location + '?query=' + collection.query;
 	}
 
 	$scope.removePictureChangeTimer = function() {
@@ -52,7 +79,8 @@ angular.module('collector').controller('BigPictureCtrl', ['$scope', '$modalInsta
 
 angular.module('collector').directive('slidechange', function() {
 	return function(scope, element) {
-		element.on('slide.bs.carousel', function() {
+		element.on('slide.bs.carousel', function(event) {
+			scope.changeCollectionQuery(event.direction);
 			scope.removePictureChangeTimer();
 			scope.changeIndex(0);
 			scope.$apply();

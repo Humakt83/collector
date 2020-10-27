@@ -5,10 +5,10 @@
 	</script>
 	
 	<ol class="carousel-indicators">
-		<li ng-repeat="collection in collectionObjects track by $index" data-target="#collectorSlides" data-slide-to="{{$index}}" ng-class="{active: $index == 0}" ng-init="activeIndex = 0"></li>
+		<li ng-repeat="collection in collectionObjects track by $index" data-target="#collectorSlides" data-slide-to="{{$index}}" ng-class="{active: $index == activeCollection}" ng-init="activeIndex = 0"></li>
 	</ol>
 	<div class="carousel-inner" role="listbox">
-		<div class="item" ng-repeat="collection in collectionObjects" ng-class="{active: $index == 0}">
+		<div class="item" ng-repeat="collection in collectionObjects" ng-class="{active: $index == activeCollection}">
 			<div class="container">
 				<div class="carousel-caption">
 					<h1>{{collection.title}}</h1>

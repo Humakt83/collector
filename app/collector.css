@@ -16,6 +16,10 @@
 	}
 }
 
+.carousel {
+	height: 100vh;
+}
+
 .carousel .item {
 	margin-top: 0px;
 }
@@ -25,7 +29,7 @@
 }
 
 .carousel-inner img {
-	height: 600px;
+	max-height: 600px;
 	border-style: ridge solid;
 	border-color: #752201;
 	border-width: thick;

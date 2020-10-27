@@ -7,7 +7,7 @@ angular.module('collector').config([ '$routeProvider', function($routeProvider) 
     .when('/home', {
         templateUrl: 'partials/home.html'
     })
-	.when('/pictures', {
+	.when('/pictures', {        
 		controller : 'PicturesController',
 		templateUrl : 'partials/pictures.html'
 	})
