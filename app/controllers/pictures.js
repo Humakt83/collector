@@ -35,13 +35,8 @@ angular.module('collector').controller('PicturesController', ['$scope', '$sce', 
 		})
 	}
 
-	$scope.changeCollectionQuery = function(direction) {
-		$scope.activeCollection += direction === 'right' ? -1 : 1;
-		if ($scope.activeCollection >= $scope.collectionObjects.length) {
-			$scope.activeCollection = 0;
-		} else if ($scope.activeCollection < 0) {
-			$scope.activeCollection = $scope.collectionObjects.length - 1;
-		}
+	$scope.changeCollectionQuery = function(elementTarget) {
+		$scope.activeCollection = [].indexOf.call(elementTarget.parentNode.children, elementTarget);
 		var collection = $scope.collectionObjects[$scope.activeCollection];
 		var location = document.location.href;
 		location = location.indexOf('?')  > 0 ? location.split('?')[0]: location;
@@ -80,7 +75,7 @@ angular.module('collector').controller('BigPictureCtrl', ['$scope', '$modalInsta
 angular.module('collector').directive('slidechange', function() {
 	return function(scope, element) {
 		element.on('slide.bs.carousel', function(event) {
-			scope.changeCollectionQuery(event.direction);
+			scope.changeCollectionQuery(event.relatedTarget);
 			scope.removePictureChangeTimer();
 			scope.changeIndex(0);
 			scope.$apply();
