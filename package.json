@@ -4,7 +4,7 @@
   "description": "Collection site",
   "main": "gulpfile.js",
   "dependencies": {
-    "browser-sync": "^2.7.3",
+    "browser-sync": "^2.27.10",
     "gulp": "^3.8.11",
     "gulp-clean": "^0.3.1",
     "gulp-jshint": "^1.11.0",
